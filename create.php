@@ -1,35 +1,49 @@
-<!Doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>exercice1</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
 </head>
 <body>
+<div class="container">
+        <fieldset>
+            <form action="update.php" method="post">
+                <h1>Editer etudiant</h1>
+                <div class="form-group">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" name="firstname" id="fn" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" name="lastname" id="ln" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="en" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="pn" class="form-control">
+                </div>
+               <input type="button" value="Enregistrer" class="btn btn-primary">
+                <input type="button" value="Annuler" class="btn btn-primary">
+            </form>
+        </fieldset>
+    </div>
+   
+    
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <form method="post" action="store.php">
-  <h1>Nouvelle etudiant </h1>
-  <div>
-  <div>
-  <br>firstname: <br> 
-  <input type="text" placeholder="first name" name="firstname">
-</div>
-</div>
-<div>
-<br> lastname <br>
-<input type="text"placeholder="last name" name="lastname">
-</div>
-<div>
-<br> email<br>
-<input type="text"placeholder="email" name="email">
-</div>
-<div>
-<br> phone<br>
-<input type="text"placeholder="phone" name="phone">
-</div>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-<button> Ennergistrer  </button>
-<button> Annuler  </button>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
 </body>
-
-
-
 </html>
