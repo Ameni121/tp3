@@ -9,13 +9,22 @@
 
 </head>
 
-
-
 <body>
+<div class="container">
+<h1> Les etudiants d'iset Bizerte </h1>
+<a href="create.php"> <input class="btn btn-primary" type="submit"> Nouvel etudiant</a>
+<table class="table table-hover"> 
+  <tr>
+  <th> Identifiant</th>
+  <th>firstname</th>
+  <th>lastname</th>
+  <th>email</th>
+  <th>phone</th>
+  <th>Operations</th>
+  </tr>
 <?php
- include 'dbconnexion.php';
+ include'dbconnexion.php';
  $reponse= $bdd->query('SELECT * FROM students ');
- echo'<table border="1">';
  while($donnees = $reponse->fetch()){
 	echo'<tr>';
 	echo'<td>'.$donnees['id'].'</td>';
@@ -26,8 +35,9 @@
 	echo'</tr>';
  }
 
-echo '</table>';
+
 ?>
+</table>
 
 
     <!-- jQuery library -->
