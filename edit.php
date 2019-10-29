@@ -34,10 +34,7 @@
             </form>
         </fieldset>
     </div>
-    <?php
-      $nb_supp = $cnx->exec("DELETE FROM students WHERE  ");
-     echo $nb_supp . ' etudiant supprimees !' ;
-     ?>
+   
     
     <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
